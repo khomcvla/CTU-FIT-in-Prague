@@ -307,14 +307,18 @@ public:
     return tmp;
   };
 };
+//------------------------------------------------------------------------------
+CGraph::CGraph()
+{
+  _root = nullptr;
+}
 //==============================================================================
 int main()
 {
   int request;
   int key;
 
-  CGraph::CVertex *root = nullptr;
-  CGraph g(root);
+  CGraph g;
 
   while (true)
   {
